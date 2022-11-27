@@ -1,234 +1,894 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/4857537c32.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section id="aboutme">
-        <div class="container">
-            <nav class="profile-nav navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Projects</a>
-                            </li>
-                        </ul>
-                    </div>
+
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+
+        <!--
+      - #SIDEBAR
+    -->
+
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Richard hanrick">Rushikesh Borakhede</h1>
+
+                    <p class="title">Fullstack developer</p>
                 </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:richard@example.com"
+                                class="contact-link">rushikeshborakhede@student.sfit.ac.in</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+919146753505" class="contact-link">+91 91467 53505</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Mumbai, India</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+        - #NAVBAR
+      -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+
+                </ul>
+
             </nav>
 
-            <div class="row">
-                <div class="col-6 about-me-text">
-                    <span>
-                        <h3>Hello I am Rushi</h3>
-                    </span>
-                    <span>
-                        <h1>
-                            Full Stack Developer
-                        </h1>
-                    </span>
-                </div>
-                <div class="col-6 my-image">
-                    <img src="images/devloper-removebg-preview.png" alt="" srcset="">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="skills">
-        <div class="container">
-            <span>
-                <h2>SKILLS</h2>
-            </span>
-            <div class="row">
-                <div class="col-3 skils-container mx-2">
-                    <span><strong>Programming</strong></span>
-                    <ul>
-                        <li>Python</li>
-                        <li>Java</li>
-                        <li>JavaScript</li>
-                        <li>Php</li>
-                        <li>Data Structures and Algorithm</li>
-                        <li>C++</li>
-                        <li>Embeded C</li>
+
+
+
+            <!--
+            - #ABOUT
+            -->
+
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+
+                    <p>
+                        I am a full-stack developer living in Mumbai, India, with an interest in learning AI and machine
+                        learning. One of my favorite parts of my job is coming up with simple, user-friendly solutions
+                        to complex problems.
+
+                        As a full-stack developer, I am skilled at using multiple frameworks in one application in order
+                        to improve performance and functionality. What I love most about my job is dealing with dreadful
+                        situations.
+
+                    </p>
+                </section>
+
+
+                <!--
+          - service
+        -->
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="assets/images/icons8-web-development-64.png" alt="Web development icon"
+                                    width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+
+                                <p class="service-item-text">
+                                    The development of sites at a professional level of quality.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="assets/images/icons8-mobile-development-50.png" alt="mobile app icon"
+                                    width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                                <p class="service-item-text">
+                                    Professional development of applications for iOS and Android.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="assets/images/icons8-devops-60.png" alt="mobile app icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">DevOps</h4>
+
+                                <p class="service-item-text">
+                                    Automate manual tasks so they can deploy faster and more reliably.
+                                </p>
+                            </div>
+
+                        </li>
+
                     </ul>
-                </div>
-                <div class="col-3 skils-container mx-2">
-                    <span><strong>Web Development</strong></span>
-                    <ul>
-                        <li>React Development</li>
-                        <li>Django Development</li>
-                        <li>Bootstrap</li>
+
+                </section>
+
+
+                <!--
+          - Main Skills
+        -->
+                <section class="skill">
+
+                    <h3 class="h3 skills-title">My skills</h3>
+
+                    <ul class="skills-list content-card">
+
+                        <li class="skills-item">
+                            <label for="devops-touch"><span class="skills-dropdown">DevOps</span></label>
+                            <input type="checkbox" id="devops-touch" class="touch">
+
+                            <ul class="slide">
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Jenkins</h5>
+                                        <data value="80">80%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 80%;"></div>
+                                    </div>
+
+                                </li>
+
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">AWS Cloud</h5>
+                                        <data value="85">85%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 85%;"></div>
+                                    </div>
+
+                                </li>
+
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Docker</h5>
+                                        <data value="75">75%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 75%;"></div>
+                                    </div>
+
+                                </li>
+
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Ansible</h5>
+                                        <data value="60">60%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 60%;"></div>
+                                    </div>
+
+                                </li>
+
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Terraform</h5>
+                                        <data value="75">75%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 75%;"></div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                        </li>
+
+                        <li class="skills-item">
+                            <label for="mob-touch"><span class="skills-dropdown">Mobile Devlopment</span></label>
+                            <input type="checkbox" id="mob-touch" class="touch">
+
+                            <ul class="slide">
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">React Native</h5>
+                                        <data value="70">70%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 70%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Flutter</h5>
+                                        <data value="60">60%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 60%;"></div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                        </li>
+
+                        <li class="skills-item">
+                            <label for="backend-touch"><span class="skills-dropdown">Backend</span></label>
+                            <input type="checkbox" id="backend-touch" class="touch">
+
+                            <ul class="slide">
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Django</h5>
+                                        <data value="90">90%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 90%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Express</h5>
+                                        <data value="85">85%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 85%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">php</h5>
+                                        <data value="70">70%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 70%;"></div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                        </li>
+
+                        <li class="skills-item">
+                            <label for="frontend-touch"><span class="skills-dropdown">Frontend</span></label>
+                            <input type="checkbox" id="frontend-touch" class="touch">
+
+                            <ul class="slide">
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">HTML</h5>
+                                        <data value="95">95%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 95%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">CSS</h5>
+                                        <data value="90">90%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 90%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">JavaScript</h5>
+                                        <data value="90">90%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 90%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">React</h5>
+                                        <data value="80">80%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 80%;"></div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                        </li>
+
+                        <li class="skills-item">
+                            <label for="other-touch"><span class="skills-dropdown">Other</span></label>
+                            <input type="checkbox" id="other-touch" class="touch">
+
+                            <ul class="slide">
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Competitive Programming</h5>
+                                        <data value="80">80%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 80%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Internet of Things</h5>
+                                        <data value="70">70%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 70%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Machine Learning</h5>
+                                        <data value="60">60%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 60%;"></div>
+                                    </div>
+
+                                </li>
+                                <li class="skills-item">
+
+                                    <div class="title-wrapper">
+                                        <h5 class="h5">Data Science</h5>
+                                        <data value="60">60%</data>
+                                    </div>
+
+                                    <div class="skill-progress-bg">
+                                        <div class="skill-progress-fill" style="width: 60%;"></div>
+                                    </div>
+
+                                </li>
+                            </ul>
+
+
+                        </li>
+
                     </ul>
+
+                </section>
+
+                <!--
+          - Main Skills End
+        -->
+
+                <div class="modal-container" data-modal-container>
+
+                    <div class="overlay" data-overlay></div>
+
+                    <section class="testimonials-modal">
+
+                        <button class="modal-close-btn" data-modal-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                            </figure>
+
+                            <img src="assets/images/icon-quote.svg" alt="quote icon">
+                        </div>
+
+                        <div class="modal-content">
+
+                            <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                            <time datetime="2021-06-14">14 June, 2021</time>
+
+                            <div data-modal-text>
+                                <p>
+                                    Richard was hired to create a corporate identity. We were very pleased with the work
+                                    done. She has a
+                                    lot of experience
+                                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                    ullamcous cididt
+                                    consectetur adipiscing
+                                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </section>
+
                 </div>
-                <div class="col-3 skils-container mx-2">
-                    <span><strong>Other Technologies</strong></span>
-                    <ul>
-                        <li>Flutter</li>
-                        <li>Machine Learning</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Internet Of Things(IOT)</li>
+
+
+                <!--
+          - clients
+        -->
+
+            </article>
+
+
+
+
+
+            <!--
+            - #RESUME
+            -->
+
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Mumbai University</h4>
+
+                            <span>2020 — 2024</span>
+
+                            <p class="timeline-text">
+                                Utilized previously learned frameworks and technologies to develop the projects. As a
+                                result, I was able to improve my skills gained in those frameworks. I also learnt how to
+                                automate manual process.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">New york academy of art</h4>
+
+                            <span>2018 — 2020</span>
+
+                            <p class="timeline-text">
+                                Gained the knowledge of basic computer operations by completing the Board studies.
+                                Learned programming languages such as C++, JavaScript, Python along with some frontend
+                                frameworks.
+                            </p>
+
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">React Developer</h4>
+
+                            <span>ABN Junction</span>
+                            <span>September 2022 — November 2022</span>
+
+                            <p class="timeline-text">
+                                Worked with clients of the company to develop react apps. Contributed to a 2% increase
+                                in profit for the company by completing the assignment on time.
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Web Developer</h4>
+
+                            <span>TEDxSFIT</span>
+                            <span>July 2022 - October 2022</span>
+
+                            <p class="timeline-text">
+                                Improved the traffic to TEDxSFIT's website by 20% after designing and customizing the
+                                site. Implemented the payment procedure.
+                            </p>
+
+                        </li>
+
+                    </ol>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+        - #PORTFOLIO
+      -->
+
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+
+                    <div class="filter-select-box">
+
+                        <span class="filter-select" data-select>
+
+                        </span>
+
+                        <ul class="select-list">
+
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web design</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Applications</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web development</button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/images/carrer-cloud.png" alt="finance" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Carrer Cloud</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web development">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/images/wasdoors.png" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Washdoors</h3>
+
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/images/davission-germer-expt.png" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Davission and Germer Simulator</h3>
+
+                                <p class="project-category">Web Simulation</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/images/address-getter.png" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Address Getter</h3>
+
+                                <p class="project-category">Widget</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="web design">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/images/covid-mgmt.png" alt="fundo" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Doctor Patient Portal</h3>
+
+                                <p class="project-category">Desktop Application</p>
+
+                            </a>
+                        </li>
+
                     </ul>
-                </div>
-            </div>
+
+                </section>
+
+            </article>
+
+
+
+            <!--
+        - #CONTACT
+      -->
+
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="contact-form">
+
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="https://getform.io/f/48ac2808-8615-4e0f-ae13-6e9379c09878" method="post" class="form"
+                        data-form>
+
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                                data-form-input>
+
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required
+                                data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                            data-form-input></textarea>
+
+                        <button class="form-btn" type="submit" data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+
+                    </form>
+
+                </section>
+
+            </article>
+
         </div>
-    </section>
 
-    <section id="projects" class="my-3">
-        <div class="container">
-            <span>
-                <h2>PROJECTS</h2>
-            </span>
-            <div class="row my-2">
-                <div class="col-4">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/pandemic-manager.png" alt="Avatar">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Pandemic Manager</h1>
-                                <p>
+    </main>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/wasdoors.png" alt="Avatar">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>WashDoors</h1>
-                                <p>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/cable-website.png" alt="Avatar">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Cable Website</h1>
-                                <p>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row my-2">
-                <div class="col-4">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/auth-lancer.png" alt="Avatar">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Auth-lancer</h1>
-                                <p>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/davission-germer-expt.png" alt="Avatar">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Davission and Germer Experiment</h1>
-                                <p>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="images/address-getter.png" alt="Avatar">
-                            </div>
-                            <div class="flip-card-back">
-                                <h1>Address Dropdown Getter</h1>
-                                <p>
 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--
+    - custom js link
+  -->
+    <script src="assets/js/script.js"></script>
 
-    <footer id="contact">
-        <div class="container">
-            <form method="post">
-                <h3>Drop Us a Message</h3>
-               <div class="row">
-                    <div class="col-md-6">
-                        <div class="my-2 form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
-                        </div>
-                        <div class="my-2 form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
-                        </div>
-                        <div class="my-2 form-group">
-                            <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
-                        </div>
-                        <div class="my-2 form-group">
-                            <input type="submit" name="btnSubmit" class="btn btn-primary" value="Send Message" />
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+    <!--
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
